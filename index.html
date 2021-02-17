@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body>
+
+    <div class="main-text">
+        <div class="container">
+            ToDo List
+        </div>
+    </div>
+
+    <div class="second-section">
+        <h1 class="second-main-text">ToDo List</h1>
+        <div class="writing-area">
+            <textarea name="" cols="30" rows="1" placeholder="New Task" class="textarea"></textarea>
+            <button class="add" onclick="MakeAnote()">add</button>
+        </div>
+        
+
+        <div class="anExampleForTheNotes" id="1"> 
+
+            <i class="far fa-check-square" onclick="
+
+            if (this.parentElement.style.textDecoration === 'line-through') {
+                this.parentElement.style.textDecoration = 'none';
+            } else { 
+                this.parentElement.style.textDecoration = 'line-through';
+            }">
+
+            </i>
+
+            <p class="main-texts">Buy some tickets for the cinema</p>
+        
+            <i class="fas fa-trash-alt" onclick="this.parentElement.style.display = 'none';"></i>
+
+        </div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
